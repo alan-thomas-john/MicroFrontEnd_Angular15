@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule,routeCompArr } from './app-routing.module';
 import { AppComponent } from './app.component';
+//import { RegisterFormComponentComponent } from './register-form-component/register-form-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routeCompArr
+    routeCompArr,
+    //RegisterFormComponentComponent
   ],
   imports: [
     BrowserModule,

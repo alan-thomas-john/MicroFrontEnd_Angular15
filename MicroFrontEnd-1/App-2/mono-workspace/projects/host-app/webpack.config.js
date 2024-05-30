@@ -39,6 +39,7 @@ module.exports = {
         // For hosts (please adjust)
         remotes: {
             "mfeApp": "mfeApp@http://localhost:4300/remoteEntry.js",
+            "mfe2App": "mfe2App@http://localhost:4201/remoteEntry2.js",
 
         },
 

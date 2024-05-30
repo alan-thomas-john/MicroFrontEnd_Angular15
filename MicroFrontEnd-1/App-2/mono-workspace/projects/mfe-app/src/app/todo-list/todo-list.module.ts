@@ -3,14 +3,18 @@ import { CommonModule } from '@angular/common';
 import { TodoListComponent } from './todo-list.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { RegisterFormComponentComponent } from '../register-form-component/register-form-component.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    TodoListComponent
+    TodoListComponent,
+    RegisterFormComponentComponent
   ],
   imports: [
+    FormsModule,
     CommonModule, BrowserModule, RouterModule.forChild([
       {
         path: '',
