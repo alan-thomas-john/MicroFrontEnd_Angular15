@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { RegisterFormComponentComponent } from '../register-form-component/register-form-component.component';
 import { FormsModule } from '@angular/forms';
+import { StateModule } from 'projects/state/src/public-api';
 
 
 
@@ -21,7 +22,11 @@ import { FormsModule } from '@angular/forms';
         component: TodoListComponent
       }
 
-    ])
-  ]
+    ]),
+    StateModule,
+  ],
+  bootstrap: [TodoListComponent],
+  //exports:[CommonModule]
+  
 })
 export class TodoListModule { }

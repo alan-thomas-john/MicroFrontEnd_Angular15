@@ -1,4 +1,4 @@
-<div>
-    <h3>{{ employee.name }}</h3>
-    <p>{{ employee.position }}</p>
+<div class="employee-details">
+  <p class="employee-info">{{ employee.name }} - {{ employee.emailId }} - {{ employee.position }}</p>
+  <button class="delete-button" (click)="deleteEmployee(employee.emailId)">Delete</button>
 </div>

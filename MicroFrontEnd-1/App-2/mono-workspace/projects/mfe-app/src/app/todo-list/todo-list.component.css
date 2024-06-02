@@ -1,0 +1,82 @@
+/* Container styles */
+.container {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Link container styles */
+  .link-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Link styles */
+  .link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: #45a049;
+  }
+  
+  /* Employee list styles */
+  .employee-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .employee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .employee-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Delete button styles */
+  .delete-btn {
+    background-color: #ff4d4d;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff3333;
+  }
+  

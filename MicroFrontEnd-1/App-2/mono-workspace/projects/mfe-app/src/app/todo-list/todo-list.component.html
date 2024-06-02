@@ -1,3 +1,15 @@
-<h2>Employee Registration</h2>
-<app-register-form-component [employee]="employee" (register)="handleRegister($event)"></app-register-form-component>
-<a routerLink="/todo2-list">Employee List</a>
+<div class="container">
+  <h2>Employee Registration</h2>
+  <app-register-form-component [employee]="employee" (register)="handleRegister($event)"></app-register-form-component>
+  <!-- <div class="link-container">
+    <a routerLink="/todo2-list" class="link">Employee List</a>
+  </div> -->
+
+  <h2>Employee List</h2>
+  <ul class="employee-list">
+    <li *ngFor="let employee of employees$ | async" class="employee-item">
+      <span>{{ employee.name }} - {{ employee.emailId }} - {{ employee.position }}</span>
+      <button (click)="handleDelete(employee.emailId)" class="btn delete-btn">Delete</button>
+    </li>
+  </ul>
+</div>

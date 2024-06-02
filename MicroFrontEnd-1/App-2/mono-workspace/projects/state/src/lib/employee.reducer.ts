@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { addEmployee, loadEmployeesSuccess } from './employee.action';
+import { addEmployee, deleteEmployeeSuccess, loadEmployeesSuccess } from './employee.action';
 import { Employee } from './employee.model';
 
 export interface EmployeeState {
@@ -10,7 +10,8 @@ export const initialState: EmployeeState = {
     employees: []
 };
 
-export const employeeReducer = createReducer(initialState,
+export const employeeReducer = createReducer(
+    initialState,
     on(addEmployee, (state, { employee }) => ({
         ...state,
         employees: [...state.employees, employee]
@@ -18,5 +19,9 @@ export const employeeReducer = createReducer(initialState,
     on(loadEmployeesSuccess, (state, { employees }) => ({
         ...state,
         employees: employees
+    })),
+    on(deleteEmployeeSuccess, (state, { emailId }) => ({
+        ...state,
+        employees: state.employees.filter(employee => employee.emailId !== emailId)
     }))
 );

@@ -11,5 +11,15 @@ export const loadEmployees = createAction(
 
 export const loadEmployeesSuccess = createAction(
     '[Employee] Load Employees Success',
-    props<{ employees: Employee[] }>()
+    props<{ employees: any }>()
+);
+
+export const deleteEmployee = createAction(
+    '[Employee] Delete Employee',
+    props<{ emailId: string }>() // Assuming emailId is unique
+);
+
+export const deleteEmployeeSuccess = createAction(
+    '[Employee] Delete Employee Success',
+    props<{ emailId: string }>()
 );

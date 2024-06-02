@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Employee } from 'projects/state/src/lib/employee.model';
 
 @Component({
   selector: 'app-register-form-component',
@@ -6,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./register-form-component.component.css']
 })
 export class RegisterFormComponentComponent {
-  @Input() employee: any;
+  @Input() employee: Employee = {name:'',emailId:'',position:''};
   @Output() register = new EventEmitter<any>();
 
   onSubmit() {

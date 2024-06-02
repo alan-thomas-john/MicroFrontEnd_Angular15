@@ -1,2 +1,7 @@
-<h2>Employee List</h2>
-<app-employee-detail *ngFor="let employee of employees" [employee]="employee"></app-employee-detail>
+<div class="employee-list-container">
+    <h2 class="employee-list-heading">Employee List</h2>
+    <div class="employee-details-wrapper">
+      <app-employee-detail *ngFor="let employee of employees$ | async" [employee]="employee"></app-employee-detail>
+    </div>
+  </div>
+  

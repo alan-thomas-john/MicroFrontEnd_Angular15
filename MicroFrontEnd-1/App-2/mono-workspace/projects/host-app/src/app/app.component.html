@@ -1,11 +1,13 @@
-<div class="e-container">
-<h1>This is employee Management application</h1>
-<br />
-<a routerLink="/">Home</a>&nbsp;&nbsp;
-<a routerLink="/todo-list">Register</a>&nbsp;&nbsp;
-<a routerLink="/todo2-list">Employee List</a>
-
-
-
+<div class="app-container">
+    <header class="header">
+        <h1>Employee Management Application</h1>
+        <nav class="nav">
+            <a routerLink="/" class="nav-link">Home</a>
+            <a routerLink="/todo-list" class="nav-link">Register</a>
+            <a routerLink="/todo2-list" class="nav-link">Employee List</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <router-outlet></router-outlet>
+    </main>
 </div>
-<router-outlet></router-outlet>

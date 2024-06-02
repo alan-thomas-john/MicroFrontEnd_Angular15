@@ -1,4 +1,46 @@
-.e-container{
+/* Root container styles */
+.app-container {
+   font-family: 'Arial, sans-serif';
+   color: #333;
+   background-color: #f0f8ff;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Header styles */
+.header {
+   background-color: #4CAF50;
+   color: white;
+   padding: 20px;
    text-align: center;
-   
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styles */
+.nav {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.nav-link {
+   color: white;
+   text-decoration: none;
+   margin: 0 15px;
+   font-size: 1.2em;
+   transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+   color: #f0f8ff;
+}
+
+/* Main content styles */
+.main-content {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
 }
